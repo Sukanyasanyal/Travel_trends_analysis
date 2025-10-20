@@ -1,0 +1,30 @@
+# Project Data Sources: Tourism Resilience and Seasonality Analysis
+
+This document lists the original files and external sources used to create the final data tables (travel_master_country_data and flights_seasonal_cleaned) that feed the Power BI dashboard.
+
+## 1. Country Resilience and Economy Data
+
+Source File in data/raw: world_tourism_economy_data.csv 
+(This file provides the foundation for the "travel_master_country_data" table.)
+
+* **Visitors_2020**: Total International Tourist Arrivals.
+* **Tourism_Revenue_2020_USD**: Total Revenue from International Tourism.
+
+## 2. Happiness and Societal Data
+
+Source File in data/raw: world-happiness-report-updated-2024.csv 
+(This file was merged with the tourism data to create the "travel_master_country_data" table.)
+*Note: the file "world-happiness-report-2024.csv" was NOT used in the final analysis.*
+
+* **Happiness_Score_2023**: The overall national happiness score.
+* **Log_GDP**: Logarithm of the country's Gross Domestic Product.
+* **Freedom_Score**: Score related to civil liberties and political rights.
+
+## 3. Seasonal Flight Data
+
+Source File in data/raw: Scraped_dataset.csv
+(This file was aggregated to create the "flights_seasonal_cleaned" table.)
+
+* **Travel_Month**: The month of the flight (used for grouping).
+* **Avg_Flight_Price**: The mean price aggregated by month.
+* **Total_Samples**: The count of flight records used in the monthly average.
