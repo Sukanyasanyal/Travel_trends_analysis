@@ -1,0 +1,3 @@
+#Exclude large raw data files and intermediate cleaned files
+data/raw/Scrapped_dataset.csv
+data/cleaned/Cleaned_dataset.csv
