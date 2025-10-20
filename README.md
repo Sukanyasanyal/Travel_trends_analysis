@@ -28,8 +28,8 @@ The project uses three primary raw data sources, but due to their size (over 45 
 | **`World-happiness-report-updated_2024.csv`** (163 KB) | **INCLUDED** (in `data/raw`) | **Happiness Scores.** Used to enrich country metrics. |
 | **`world_tourism_economy_data.csv`** (666 KB) | **INCLUDED** (in `data/raw`) | **Tourism/Economic Metrics.** Core file for resilience analysis. |
 | **`World-happiness-report-2024.csv`** (13 KB) | **INCLUDED** (in `data/raw`) | **NOT USED**. An older version of the happiness report was ignored. |
-|**`travel_master_country_data.csv`** (4 KB) | **INCLUDED** | **Primary Resilience Data**. Custom merged file used to create the Power BI scatter plot and map. |
-|**`flights_seasonal_cleaned.csv`** (1 KB) | **INCLUDED** | **Primary Seasonality Data**. Custom aggregated file used for Power BI line chart and card. |
+|**`travel_master_country_data.csv`** (4 KB) | **INCLUDED** (in `data/cleaned`) | **Primary Resilience Data**. Custom merged file used to create the Power BI scatter plot and map. |
+|**`flights_seasonal_cleaned.csv`** (1 KB) | **INCLUDED** (in `data/cleaned`) | **Primary Seasonality Data**. Custom aggregated file used for Power BI line chart and card. |
 
 
 ### 4. Technical Challenges & Solutions (Showcasing Problem-Solving)
