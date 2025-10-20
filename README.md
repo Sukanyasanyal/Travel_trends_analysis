@@ -23,9 +23,10 @@ The project uses three primary raw data sources, but due to their size (over 45 
 | Source File (Raw Input) | Status in Repository | Purpose & Access Instructions |
 | :--- | :--- | :--- |
 | **`Scraped_dataset.csv`** (47.5 MB) | **EXCLUDED** (`.gitignore`) | **Raw Flight Data.** Source for seasonality analysis. [Please download this file from its original Kaggle or external source.] |
-| **`Cleaned_dataset.csv`** (48.0 MB) | **EXCLUDED** (`.gitignore`) | **Intermediate File.** This file was created during the data cleaning process but is too large for GitHub and is not needed for the final Power BI model. |
+| **`Cleaned_dataset.csv`** (48.0 MB) | **EXCLUDED** (`.gitignore`) | **Intermediate File.** This pre-cleaned file was ignored in favor of a custom cleaning and merging workflow. |
 | **`World-happiness-report-updated_2024.csv`** (163 KB) | **INCLUDED** (in `data/raw`) | **Happiness Scores.** Used to enrich country metrics. |
 | **`world_tourism_economy_data.csv`** (666 KB) | **INCLUDED** (in `data/raw`) | **Tourism/Economic Metrics.** Core file for resilience analysis. |
+| **`World-happiness-report-2024.csv`** (13 KB) | **INCLUDED** (in `data/raw`) | **NOT USED**. An older version of the happiness report was ignored. |
 
 
 4. Technical Challenges & Solutions (Showcasing Problem-Solving)
