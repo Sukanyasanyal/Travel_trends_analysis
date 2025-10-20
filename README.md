@@ -8,18 +8,25 @@ Country Resilience: Which economic and societal factors correlate with a country
 
 Travel Seasonality: What is the seasonal trend of international flight prices, and when are the most and least expensive times to travel?
 
-2. Tools & Technologies Used
-Tool/Technology,Used For
-Google Colab (Python/Pandas),"Data Acquisition, Cleaning, Transformation, & Merging (ETL). This was the primary tool for cleaning and combining raw data into two final CSV files."
-Microsoft Power BI,"Data Modeling, DAX, & Visualization. Used for dashboard creation, final data modeling, and creating the Visitor_Tier column."
-Generative AI (ChatGPT & Gemini),Troubleshooting & Debugging. Used to assist in resolving complex coding and syntax errors encountered during the data cleaning phase.
+### 2. Tools & Technologies Used
 
-3. Data Sources, Preparation, & Final Outputs
-The project used three raw data files, which were processed and merged in Google Colab (Python/Pandas) to create the two clean output files (data/cleaned folder):
+| Tool/Technology | Used For |
+| :--- | :--- |
+| **Google Colab (Python/Pandas)** | **Data Acquisition, Cleaning, Transformation, & Merging (ETL)**. This was the primary tool for cleaning and combining raw data into two final CSV files. |
+| **Microsoft Power BI** | **Data Modeling, DAX, & Visualization**. Used for dashboard creation, final data modeling, and creating the `Visitor_Tier` column. |
+| **Generative AI (ChatGPT & Gemini)** | **Troubleshooting & Debugging.** Used to assist in resolving complex coding and syntax errors encountered during the data cleaning phase. |
 
-Final Output File,Raw Source Files Used,Key Transformations in Colab
-travel_master_country_data.csv = world_tourism_economy_data.csv and World-happiness-report-updated_2024.csv,Merged on Country. Verified latest complete data year (2020) and cleaned columns.
-flights_seasonal_cleaned.csv = Scraped_dataset.csv,"Aggregated by Travel_Month to calculate Avg_Flight_Price, significantly reducing data volume."
+### 3. Data Sources & Usage (Updated for Reproducibility)
+
+The project uses three primary raw data sources, but due to their size (over 45 MB each), two have been removed from this repository and must be downloaded separately.
+
+| Source File (Raw Input) | Status in Repository | Purpose & Access Instructions |
+| :--- | :--- | :--- |
+| **`Scraped_dataset.csv`** (47.5 MB) | **EXCLUDED** (`.gitignore`) | **Raw Flight Data.** Source for seasonality analysis. [Please download this file from its original Kaggle or external source.] |
+| **`Cleaned_dataset.csv`** (48.0 MB) | **EXCLUDED** (`.gitignore`) | **Intermediate File.** This file was created during the data cleaning process but is too large for GitHub and is not needed for the final Power BI model. |
+| **`World-happiness-report-updated_2024.csv`** (163 KB) | **INCLUDED** (in `data/raw`) | **Happiness Scores.** Used to enrich country metrics. |
+| **`world_tourism_economy_data.csv`** (666 KB) | **INCLUDED** (in `data/raw`) | **Tourism/Economic Metrics.** Core file for resilience analysis. |
+
 
 4. Technical Challenges & Solutions (Showcasing Problem-Solving)
 The data pipeline presented several significant real-world challenges, which required specialized solutions:
